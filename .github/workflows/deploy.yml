@@ -1,0 +1,26 @@
+name: Deploy HTML website
+
+on:
+  push:
+    branches:
+      - master  # Change to your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build website
+      run: |
+        # If you need to build your website (e.g., compile SCSS, minify JS, etc.), put your build commands here
+        # For a simple HTML website, you may not need this step
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages  # Change to your desired branch (usually gh-pages for GitHub Pages)
+        FOLDER: .  # Change to the folder containing your HTML website files
