@@ -1,0 +1,81 @@
+{% load static %}
+<html>
+<head>
+<link  rel="stylesheet" type='text/css' href="{% static 'css/1.css' %}">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="topnav">
+
+<a class="active"  href="{% url 'index'%}" button type="home"><i class="fa fa-home" aria-hidden="true"></i></a>
+  <a href="subject"><i class="fa fa-book" aria-hidden="true"></i>  Subjects</a>
+  <a href="contact"><i class="fa fa-envelope" aria-hidden="true"></i>  Contact</a>
+  <a href="about"><i class="fa fa-info-circle" aria-hidden="true"></i>  About</a>
+</div>
+
+<div style="padding:15%">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+<ul>
+  <li><a class="active" href="{% url 'index'%}">Home</a></li>
+  <li><a href="1.txt">C programing tutorial</a></li>
+  <li><a href="#contact">envimental setup</a></li>
+  <li><a href="#about">basic structure</a></li>
+  <li><a href="#about">programing structure</a></li>
+  <li><a href="#about">data type</a></li>
+  <li><a href="#about">variable</a></li>
+  <li><a href="constant.txt">constant</a></li>
+  <li><a href="#about">storage class</a></li>
+  <li><a href="#about">operator</a></li>
+  <li><a href="#about">decision making</a></li>
+  <li><a href="#about">loops</a></li>
+  <li><a href="#about">funtions</a></li>
+  <li><a href="#about">scope rules</a></li>
+  <li><a href="#about">array</a></li>
+  <li><a href="#about">pointers</a></li>
+  <li><a href="#about">strings</a></li>
+  <li><a href="#about">structure</a></li>
+  <li><a href="#about">union</a></li>
+  <li><a href="#about">bit fields</a></li>
+  <li><a href="#about">input and output</a></li>
+  <li><a href="#about">typedef</a></li>
+  <li><a href="#about">file input and output</a></li>
+  <li><a href="#about">preprocessor</a></li>
+  <li><a href="#about">header files</a></li>
+  <li><a href="#about">typecasting</a></li>
+  <li><a href="#about">error handling</a></li>
+  <li><a href="#about">recrusion</a></li>
+  <li><a href="#about">variable arguments</a></li>
+  <li><a href="#about">memory managment</a></li>
+  <li><a href="#about">comand line arguments</a></li>
+</ul>
+
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+</body>
+</html>
